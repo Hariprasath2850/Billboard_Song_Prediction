@@ -1,0 +1,8 @@
+flask
+pandas
+numpy
+librosa
+pychorus
+spotipy
+scipy
+sklearn

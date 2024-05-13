@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Song</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://www.indiaparenting.com/images/69/western-classical-music.jpg');            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="file"] {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        p {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Song</h1>
+    <form action="/predict_song" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".mp3" required>
+        <input type="submit" value="Predict">
+    </form>
+    {% if filename and predict %}
+    <p>prediction: {{ filename }} is {{ predict }} </p>
+    {% endif %}
+</body>
+</html>

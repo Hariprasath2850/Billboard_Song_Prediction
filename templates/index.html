@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        /* Your CSS styles here */
+        body {
+            /* Set background image */
+            background-image: url('https://images.unsplash.com/photo-1453090927415-5f45085b65c0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fG11c2ljJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');
+            /* Adjust background image size and positioning */
+            background-size: cover;
+            background-position: center;
+            /* Specify background color as fallback */
+             /* Fallback color if image is not available */
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            /* Set text color */
+            color: white; /* White text color */
+            /* Add padding to body */
+            padding: 20px;
+        }
+        /* Additional styles for other elements */
+        h1, p {
+            text-align: center;
+        }
+        /* Style for buttons */
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #9a7373c7; /* Blue background color */
+            color: white; /* White text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .box{
+            border: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="box">Hey there!</h1>
+        <h1>Welcome to Song Prediction Suite</h1>
+        <p>The Mainstream of this project is to predict Popular and Unpopular Songs and there are two buttons created as well. First let me explain the Upload song button, here we upload songs from localhost and this application will result as popular or not. This completely works on machine learning algorithm which we earlier used to predict for different models. The best model is chosen based on accuracy and applied here. About Spotify link, here we take a link from Spotify website directly and this application predicts if the song is popular or not popular. This also uses a machine learning algorithm as well.</p>
+        <a href="/upload_songs"><button>Upload songs</button></a>
+        <a href="/spotify_link"><button>Spotify Link</button></a>
+    </div>
+</body>
+</html>

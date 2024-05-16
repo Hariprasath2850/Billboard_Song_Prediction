@@ -12,14 +12,6 @@ import requests
 import spotify
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
-#auth = ngrok authtoken 2g0GrfqlzR8yK0Vx07R4cJB2KKi_7DsyjcRkVJKnWaSrubY52
-from pyngrok import ngrok
-
-#public_url = ngrok.connect(port = '5000')
-#ssh_url = ngrok.connect(22,"tcp")
-
-#public_url
-#ngrok.kill()
 
 
 
@@ -41,7 +33,7 @@ def get_song_title_from_spotify_link(link):
     return track_info['name']
 
 
-#input_file = "C:\Users\harip\OneDrive\Documents\Technocolab_Music\Choruses"
+#input_file = "Choruses/"
 
 def extract_features(name):
     features = {}
